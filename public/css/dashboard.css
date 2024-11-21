@@ -1,103 +1,35 @@
 /* Global Styles */
+html,
 body {
     font-family: "Arial", sans-serif;
+    height: 100%;
     margin: 0;
-    padding: 0;
     background-color: #f9fafb;
-}
-
-/* Sidebar */
-.sidebar {
-    width: 15%;
-    background-color: white;
-    height: 100vh;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.logo-icon {
-    font-size: 36px;
-    color: #f59e0b;
-}
-
-.logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-.nav {
     display: flex;
     flex-direction: column;
 }
 
-.nav-link {
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    font-size: 16px;
-    color: #4b5563;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.nav-link:hover {
-    background-color: #f59e0b; /* Adds a hover effect */
-    color: white;
-}
-
-.nav-icon {
-    margin-right: 10px;
-}
-
-.settings {
-    margin-top: 50px;
-}
-
-.settings-title {
-    font-weight: bold;
-    font-size: 16px;
-    color: #6b7280;
-    margin-bottom: 15px;
-}
-
-.settings-link {
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    font-size: 16px;
-    color: #4b5563;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.settings-icon {
-    margin-right: 10px;
-}
-
-.settings-link.logout {
-    color: #ef4444;
-}
-
 /* Main Content */
-.flex {
-    display: flex; /* Mengatur elemen dalam satu baris */
-    width: 100%; /* Lebar penuh */
-    height: 100vh; /* Tinggi penuh */
+.container {
+    display: flex; /* Menggunakan flexbox untuk mengatur layout */
+    flex-direction: row; /* Mengatur arah flex menjadi baris */
+    height: 100vh; /* Mengatur tinggi container menjadi 100vh */
+}
+
+.sidebar {
+    width: 15%; /* Lebar sidebar */
+    background-color: white;
+    height: 100%; /* Mengatur tinggi sidebar menjadi 100% dari container */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .main-content {
-    width: 60%; /* Lebar konten utama */
-    padding: 20px; /* Padding untuk konten utama */
+    width: 85%; /* Lebar konten utama */
+    padding: 20px;
     display: flex;
     flex-direction: column; /* Menyusun konten secara vertikal */
-    justify-content: flex-start; /* Menyusun konten dari atas */
+    justify-content: flex-start;
 }
 
 .header {
@@ -144,34 +76,36 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
 .welcome-card {
-    background-color: #f6e05e; /* Warna kuning */
+    background-color: #ffb900; /* Warna kuning */
     color: white;
     padding: 1.5rem;
     border-radius: 0.5rem;
 }
 
 .welcome-title {
-    font-size: 1.5rem; /* Ukuran font untuk judul */
+    font-size: 2rem; /* Ukuran font untuk judul */
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 .welcome-message {
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .explore-button {
-    background-color: #3182ce; /* Warna biru */
+    background-color: #1237a1; /* Warna biru */
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     border: none;
     cursor: pointer;
+    margin-top: 5rem;
 }
 
 .progress-card {
@@ -181,7 +115,7 @@ body {
 }
 
 .progress-title {
-    color: #4a5568; /* Warna abu-abu gelap */
+    color: #828282; /* Warna abu-abu gelap */
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -189,7 +123,7 @@ body {
 .progress-circle {
     width: 6rem;
     height: 6rem;
-    border: 8px solid #f6e05e; /* Border kuning */
+    border: 8px solid #ffde00; /* Border kuning */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -204,7 +138,7 @@ body {
 
 .progress-message {
     text-align: center;
-    color: #a0aec0; /* Warna abu-abu */
+    color: #828282; /* Warna abu-abu */
     margin-top: 1rem;
 }
 
@@ -212,22 +146,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.5rem 0;
 }
 
 .stat-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    font-size: 1.5rem; /* Memperbesar semua teks dan ikon di dalamnya */
+    padding: 0.5rem 1rem; /* Memberikan ruang di sekitar konten */
 }
 
 .stat-title {
-    font-weight: 600;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #9e9e9e;
+    margin-bottom: 0.2rem;
 }
 
 .stat-value {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
+    margin-top: 0;
 }
 
 .ty-card {
@@ -237,7 +176,7 @@ body {
 }
 
 .activity-title {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -250,146 +189,89 @@ body {
 
 .activity-item {
     display: flex;
-    align-items: flactiviex-start; /* Rata kiri */
-    margin-bottom: 1.5rem; /* Jarak antar item */
+    align-items: center;
+    justify-content: flex-start; /* Menghindari perbedaan ukuran */
+    width: 100%;
 }
 
 .activity-image {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 0.375rem;
-    margin-right: 1rem; /* Jarak antara gambar dan konten */
+    margin-right: 1rem;
 }
 
-.activity-name {
-    font-weight: 600;
+.activity-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Agar konten dapat mengisi sisa ruang */
+    margin-right: 1rem; /* Memberi jarak antara deskripsi dan progress bar */
 }
 
 .activity-description {
     color: #a0aec0;
-    margin-bottom: 0.5rem;
+    white-space: nowrap; /* Mencegah teks melanjutkan ke baris baru */
+    overflow: hidden; /* Menyembunyikan teks yang lebih panjang */
+    text-overflow: ellipsis; /* Menambahkan elipsis jika teks terlalu panjang */
 }
 
 .activity-progress {
     display: flex;
-    flex-direction: column; /* Menata progress bar dan link ke bawah */
-    gap: 0.5rem;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; /* Agar progress bar tetap di sebelah kiri */
+    width: 100%;
 }
 
 .progress-bar {
-    width: 100%;
+    width: 100%; /* Progress bar akan mengambil sisa ruang yang tersedia */
+    max-width: 500px; /* Maksimal lebar progress bar */
+    height: 0.625rem;
     background-color: #edf2f7;
     border-radius: 9999px;
-    height: 0.625rem;
+    position: relative;
+    overflow: hidden;
+    margin-right: 1rem; /* Menambahkan sedikit jarak dengan tombol */
 }
 
 .progress-fill {
-    background-color: #ef4444;
-    height: 100%; /* Memastikan lebar penuh pada progress */
+    background-color: #00017a;
+    height: 100%;
+}
+
+.progress-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #282938;
+    font-weight: bold;
+    font-size: 0.75rem;
 }
 
 .continue-link {
     text-decoration: none;
-    color: #3182ce; /* Warna biru */
+    color: #2405f2; /* Warna biru */
     font-weight: 600;
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
-}
-
-.continue-link.bg-blue-600 {
-    background-color: #3182ce; /* Warna biru untuk button */
-    color: white;
+    background-color: #ffffff; /* Warna latar default */
+    border: 1px solid #cbd5e0; /* Border untuk tombol */
 }
 
 .continue-link:hover {
-    background-color: #2b6cb0; /* Efek hover */
+    background-color: #2405f2; /* Efek hover */
+    color: #ffffff;
 }
 
-/* Right Sidebar Styles */
-.right-sidebar {
-    width: 21%; /* Lebar sidebar kanan */
-    padding: 10px; /* Padding untuk sidebar kanan */
-    background-color: white; /* Warna latar belakang */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk sidebar kanan */
-    height: 100vh; /* Tinggi penuh */
-    overflow-y: auto; /* Scroll jika konten terlalu banyak */
-    margin-left: 50px;
-}
+/* Media Query untuk Responsif */
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%; /* Mengubah lebar konten utama untuk perangkat lebih kecil */
+        padding: 10px;
+    }
 
-.profile-card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.profile {
-    display: flex;
-    align-items: center; /* Vertikal center */
-}
-
-.profile-pic {
-    width: 50px; /* Ukuran foto profil */
-    height: 50px; /* Ukuran foto profil */
-    border-radius: 50%; /* Bulat */
-    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
-    margin-right: 10px; /* Ruang antara gambar dan teks */
-}
-
-.notifications {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
-}
-
-.calendar-card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.calendar-title {
-    color: #4a5568; /* Warna abu-abu gelap */
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    text-align: center;
-    color: #4a5568; /* Warna abu-abu gelap */
-}
-
-.stats-card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-}
-
-.stats-title {
-    color: #4a5568; /* Warna abu-abu gelap */
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.stats-bar {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    height: 6rem; /* Tinggi area statistik */
-    margin-bottom: 1rem;
-}
-
-.bar {
-    width: 1rem;
-    background-color: #f6e05e; /* Warna kuning */
-}
-
-.days {
-    display: flex;
-    justify-content: space-around;
-    color: #4a5568; /* Warna abu-abu gelap */
+    .grid {
+        grid-template-columns: 1fr; /* Menyusun grid menjadi satu kolom */
+    }
 }

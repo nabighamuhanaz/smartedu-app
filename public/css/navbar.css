@@ -1,0 +1,98 @@
+.sidebar {
+    width: 15%;
+    background-color: white;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo-icon {
+    font-size: 36px;
+    color: #f59e0b;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #4b5563;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.nav-link:hover {
+    background-color: #f59e0b; /* Adds a hover effect */
+    color: white;
+}
+
+.nav-icon {
+    margin-right: 10px;
+}
+
+.settings {
+    margin-top: 50px;
+}
+
+.settings-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.settings-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #4b5563;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.settings-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #4b5563;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Menambahkan transisi untuk hover */
+}
+
+.settings-link:hover {
+    background-color: #f59e0b; /* Adds a hover effect */
+    color: white;
+}
+
+.settings-icon {
+    margin-right: 10px;
+}
+
+.settings-link.logout {
+    color: #ef4444;
+}
+
+.settings-link.logout:hover {
+    background-color: #f59e0b; /* Adds a hover effect */
+    color: white;
+}
