@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%; /* Membuat header full-width */
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+    position: fixed; /* Menjadikan header tetap di atas */
+    top: 0; /* Menempatkan header di bagian atas */
+    z-index: 1000; /* Memastikan header berada di atas elemen lainnya */
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+.header .logo-icon {
+    font-size: 36px;
+    color: #ffde00;
+}
+.header .logo span {
+    font-size: 18px; /* Smaller text size */
+    font-weight: bold;
+    margin-left: 5px;
+    background: linear-gradient(to right, #ffde00, #1873d3);
+    -webkit-background-clip: text; /* For Chrome and Safari */
+    background-clip: text; /* Standard property for other browsers */
+    -webkit-text-fill-color: transparent; /* For text color compatibility */
+}
+.header .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    position: relative;
+    left: 20px;
+}
+.header .search-bar input {
+    width: 90%; /* Reduce width */
+    padding: 10px 10px 10px 50px; /* Add padding for icon */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0; /* Lighter grey background */
+    color: #333; /* Dark text */
+}
+.header .search-bar .fa-search {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333; /* Dark color for the icon */
+}
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+.header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header .user-info span {
+    font-size: 16px;
+}

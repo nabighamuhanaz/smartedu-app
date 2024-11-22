@@ -1,228 +1,173 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F5F7FA;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
     margin: 0;
     padding: 0;
 }
+
 .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    padding-left: 60px;
+    box-sizing: border-box;
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    background-color: #fff; /* White background */
-}
-.header .logo {
-    display: flex;
-    align-items: center;
-}
-.header .logo img {
-    width: 30px; /* Smaller logo size */
-    height: 30px; /* Smaller logo size */
-    background-color: #FFD700; /* Yellow background */
-    border-radius: 50%; /* Make it circular */
-}
-.header .logo span {
-    font-size: 18px; /* Smaller text size */
-    font-weight: bold;
-    margin-left: 10px;
-    background: linear-gradient(to right, #FFD700, #808080);
-    -webkit-background-clip: text; /* For Chrome and Safari */
-    background-clip: text; /* Standard property for other browsers */
-    -webkit-text-fill-color: transparent; /* For text color compatibility */
-}
-.header .search-bar {
-    flex-grow: 1;
-    margin: 0 20px;
-    position: relative;
-}
-.header .search-bar input {
-    width: 80%; /* Reduce width */
-    padding: 10px 10px 10px 30px; /* Add padding for icon */
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    background-color: #F0F0F0; /* Lighter grey background */
-    color: #333; /* Dark text */
-}
-.header .search-bar .fa-search {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #333; /* Dark color for the icon */
-}
-.header .user-info {
-    display: flex;
-    align-items: center;
-}
-.header .user-info img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.header .user-info span {
-    font-size: 16px;
-}
-.sidebar {
-    width: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #fff;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-}
-.sidebar a {
-    margin: 20px 0;
-    color: #333;
-    font-size: 24px;
-    text-decoration: none;
-}
-.sidebar a .fa-calendar {
-    color: #FFD700; /* Yellow color for the calendar icon */
-}
+
 .content {
     margin-left: 80px;
     padding: 20px;
 }
+
 .content h1 {
     font-size: 32px;
     font-weight: bold;
 }
+
 .content p {
     color: #666;
 }
+
 .chapter {
     margin: 20px 0;
 }
+
 .chapter h2 {
     font-size: 24px;
     font-weight: bold;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
+
 .chapter h2 i {
     margin-right: 10px;
+    transition: transform 0.3s;
 }
+
 .chapter .card-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px; /* Reduce gap between cards */
+    display: none; /* Hide by default */
+    flex-direction: row;
+    gap: 20px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
-.chapter .card {
+
+.chapter.open .card-container {
+    display: flex; /* Show content when chapter is open */
+    max-height: 500px; /* Adjust as needed */
+}
+
+.chapter.open h2 i {
+    transform: rotate(90deg); /* Rotate chevron when open */
+}
+
+.card {
+    position: relative;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     align-items: center;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    width: 250px; /* Increase width */
-    height: 200px; /* Reduce height */
-    border-left: 5px solid #FFD700; /* Gold border */
+    width: 250px;
+    border-left: 5px solid #ffd700;
 }
-.chapter .card img {
-    width: 100%; /* Full width */
-    height: 100px; /* Maintain height */
+
+.card img {
+    width: 100%;
+    height: 100px;
     border-radius: 10px;
-    margin-bottom: 10px; /* Add margin below image */
+    margin-bottom: 10px;
 }
-.chapter .card .info {
-    text-align: left; /* Left align text */
-    width: 100%; /* Full width */
+
+.card .info {
+    text-align: left;
+    width: 100%;
 }
-.chapter .card .info h3 {
-    font-size: 16px; /* Reduce font size */
+
+.card .info h3 {
+    font-size: 16px;
     font-weight: bold;
-    margin: 0;
     color: #333;
 }
-.chapter .card .info p {
+
+.card .info p {
     color: #666;
-    margin: 5px 0;
 }
-.chapter .card .info .author {
+
+.card .info .author {
     display: flex;
     align-items: center;
 }
-.chapter .card .info .author img {
-    width: 25px; /* Reduce author image size */
-    height: 25px; /* Reduce author image size */
+
+.card .info .author img {
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     margin-right: 10px;
 }
-.chapter .card .info .author span {
-    font-size: 12px; /* Reduce font size */
+
+.card .info .author span {
+    font-size: 12px;
     color: #333;
 }
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #1237A1;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.download-btn {
+    position: absolute;
+    top: 230px;
+    right: 10px;
+    background-color: #FFB900;
+    color: #000000;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #1237A1;
+    color: white;
+}
+
 .badge {
-    background-color: #0056b3; /* Dark blue background */
-    color: white; /* White text */
-    padding: 2px 5px; /* Smaller padding */
+    background-color: #0056b3;
+    color: white;
+    padding: 2px 5px;
     border-radius: 5px;
     margin-left: 10px;
-    font-size: 12px; /* Smaller font size */
+    font-size: 12px;
 }
+
 .locked-message {
-    background-color: #fff; /* White background */
-    color: #333; /* Dark text */
-    padding: 2px 5px; /* Smaller padding */
-    border-radius: 15px; /* More rounded corners */
+    background-color: #fff;
+    color: #333;
+    padding: 2px 5px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     margin-top: 10px;
-    width: fit-content; /* Adjust width to fit content */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow */
-    border: 1px solid #000; /* Black outline */
-    font-size: 12px; /* Smaller font size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000;
+    font-size: 12px;
 }
+
 .locked-message i {
-    margin-right: 5px; /* Smaller margin */
-    color: #0056b3; /* Dark blue color for the lock icon */
-}
-.footer {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: space-between;
-}
-.footer .left {
-    width: 50%;
-}
-.footer .left h3 {
-    font-size: 18px;
-    font-weight: bold;
-}
-.footer .left p {
-    color: #666;
-}
-.footer .right {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px; /* Add margin to the left */
-}
-.footer .right .column {
-    display: flex;
-    flex-direction: column;
-}
-.footer .right a {
-    color: #333;
-    text-decoration: none;
-    margin: 5px 0;
-}
-.footer .right h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    margin-right: 5px;
+    color: #0056b3;
 }
