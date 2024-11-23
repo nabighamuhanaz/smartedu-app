@@ -13,3 +13,7 @@ Route::get('/detail-course', function () {
 Route::get('/video', function () {
     return view('video.video');  // pastikan pathnya sesuai dengan file video.blade.php
 })->name('video.belajar');
+
+Route::get('/upload-tugas', function () {
+    return view('upload_tugas.upload_tugas');
+})->name('upload-tugas');
