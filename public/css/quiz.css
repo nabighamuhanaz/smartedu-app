@@ -1,0 +1,133 @@
+body {
+    font-family: 'Inter';
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F5F9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.header .logo img {
+    height: 40px;
+}
+
+.header .right-menu {
+    display: flex; /* Flexbox untuk menyusun elemen secara horizontal */
+    align-items: center; /* Vertikal sejajar */
+    gap: 20px; /* Memberi jarak antar elemen */
+}
+
+.header .search-bar {
+    display: flex;
+    align-items: center; /* Vertikal sejajar antara ikon dan input */
+}
+
+.header .search-bar input {
+    width: 200px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.header .search-bar i {
+    margin-left: 8px; /* Jarak antara input dan ikon pencarian */
+    color: #333;
+}
+
+.header .user {
+    display: flex;
+    align-items: center; /* Vertikal sejajar */
+    gap: 10px; /* Jarak antara foto dan teks */
+}
+
+.header .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header .user span {
+    font-size: 14px;
+    color: #333;
+}
+
+.main {
+    display: flex;
+    padding: 20px;
+}
+.main .content {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+.main .content .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0033cc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.main .content .quiz-header .title {
+    font-size: 18px;
+}
+.main .content .quiz-header .timer {
+    display: flex;
+    align-items: center;
+}
+.main .content .quiz-header .timer span {
+    margin-right: 10px;
+}
+.main .content .quiz-header .timer .time-box {
+    font-size: 18px;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.main .content .quiz {
+    background-color: #ffcc00;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.main .content .quiz .question {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.main .content .quiz .question p {
+    margin: 0 0 10px;
+}
+.main .content .quiz .question .options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main .content .quiz .question .options li {
+    margin-bottom: 10px;
+}
+.main .content .quiz .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .content .quiz .navigation button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.main .content .quiz .navigation button i {
+    margin-right: 5px;
+}
