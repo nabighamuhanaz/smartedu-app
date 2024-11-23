@@ -13,7 +13,7 @@
         <a href="{{ route('kursus-saya') }}" class="nav-link">
             <i class="fas fa-book nav-icon"></i> Kursus Saya
         </a>
-        <a href="#" class="nav-link">
+        <a href="{{ route('upload-tugas') }}" class="nav-link">
             <i class="fas fa-graduation-cap nav-icon"></i> Nilai Saya
         </a>
         <a href="#" class="nav-link">
