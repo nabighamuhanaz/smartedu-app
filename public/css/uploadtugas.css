@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F7FA;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+}
+.sidebar {
+    width: 80px;
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.sidebar i {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #B0B0B0;
+}
+.sidebar i:hover {
+    color: #000000;
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700;
+}
+.header .search-bar {
+    position: relative;
+}
+.header .search-bar input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #E0E0E0;
+    width: 200px;
+}
+.header .search-bar i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #B0B0B0;
+}
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+.header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header .user-info .name {
+    font-size: 14px;
+    color: #000000;
+}
+.header .user-info .name span {
+    display: block;
+    font-size: 12px;
+    color: #B0B0B0;
+}
+.content {
+    display: flex;
+}
+.content .table-container {
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.content .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.content .table-container table th, .content .table-container table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #E0E0E0;
+}
+.content .table-container table th {
+    background-color: #F5F7FA;
+    font-weight: bold;
+}
+.content .table-container table td .submit-btn {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.content .table-container table td .submit-btn:hover {
+    background-color: #FFC107;
+}
+.content .progress-container {
+    width: 200px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.content .progress-container .progress-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.content .progress-container .progress-circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.content .progress-container .progress-circle .circle {
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: 50.24;
+    stroke-width: 10;
+    stroke: #FFD700;
+    fill: none;
+}
+
+.content .progress-container .progress-circle .background {
+    stroke-width: 10;
+    stroke: #E0E0E0;
+    fill: none;
+}
+
+.content .progress-container .progress-circle .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700;
+}
