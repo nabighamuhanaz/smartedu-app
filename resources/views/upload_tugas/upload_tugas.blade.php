@@ -4,25 +4,42 @@
    SmartEdu
   </title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <link href="{{ asset('css/navbar2.css') }}" rel="stylesheet" />
   <link href="{{ asset('css/uploadtugas.css') }}" rel="stylesheet" />
  </head>
  <body>
   <div class="container">
-   <div class="sidebar">
-    <i class="fas fa-home">
-    </i>
-    <i class="fas fa-tasks">
-    </i>
-    <i class="fas fa-calendar-alt">
-    </i>
-    <i class="fas fa-file-alt">
-    </i>
-    <i class="fas fa-cog">
-    </i>
-    <i class="fas fa-sign-out-alt">
-    </i>
-   </div>
+    <div class="sidebar">
+        <a href="{{ route('dashboard') }}">
+            <i class="fas fa-home nav-icon"></i>
+        </a>
+        <a href="#">
+            <i class="fas fa-envelope nav-icon">
+            </i>
+        </a>
+        <a href="{{ route('kursus-saya') }}">
+            <i class="fas fa-book nav-icon">
+            </i>
+        </a>
+        <a href="#">
+            <i class="fas fa-graduation-cap nav-icon">
+            </i>
+        </a>
+        <a href="#">
+            <i class="fas fa-calendar-alt nav-icon">
+            </i>
+        </a>
+        <a href="#">
+            <i class="fas fa-cog settings-icon">
+            </i>
+        </a>
+        <a href="#">
+            <i class="fas fa-sign-out-alt">
+            </i>
+        </a>
+    </div>
    <div class="main-content">
     <div class="header">
      <div class="logo">
