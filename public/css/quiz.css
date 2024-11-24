@@ -70,7 +70,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0033cc;
+    background-color: #1237A1;
     color: #fff;
     padding: 10px 20px;
     border-radius: 8px;
@@ -93,7 +93,7 @@ body {
     border-radius: 4px;
 }
 .main .content .quiz {
-    background-color: #ffcc00;
+    background-color: #FFB900;
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
@@ -130,4 +130,54 @@ body {
 }
 .main .content .quiz .navigation button i {
     margin-right: 5px;
+}
+
+.main .sidebar {
+    width: 200px;
+}
+.main .sidebar .quiz-nav {
+    background-color: #ffcc00;
+    padding: 20px;
+    border-radius: 8px;
+}
+.main .sidebar .quiz-nav .title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.main .sidebar .quiz-nav .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+.main .sidebar .quiz-nav .grid button {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.footer {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+.footer .left {
+    max-width: 50%;
+}
+.footer .left p {
+    margin: 0;
+    font-size: 14px;
+}
+.footer .right {
+    display: flex;
+    flex-direction: column;
+}
+.footer .right a {
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
