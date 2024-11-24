@@ -3,43 +3,17 @@
   <title>
    SmartEdu
   </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
   <link href="{{ asset('css/navbar2.css') }}" rel="stylesheet" />
   <link href="{{ asset('css/uploadtugas.css') }}" rel="stylesheet" />
+  <link href="{{ asset('css/footer.css') }}" rel="stylesheet" />
  </head>
  <body>
   <div class="container">
-    <div class="sidebar">
-        <a href="{{ route('dashboard') }}">
-            <i class="fas fa-home nav-icon"></i>
-        </a>
-        <a href="#">
-            <i class="fas fa-envelope nav-icon">
-            </i>
-        </a>
-        <a href="{{ route('kursus-saya') }}">
-            <i class="fas fa-book nav-icon">
-            </i>
-        </a>
-        <a href="#">
-            <i class="fas fa-graduation-cap nav-icon">
-            </i>
-        </a>
-        <a href="#">
-            <i class="fas fa-calendar-alt nav-icon">
-            </i>
-        </a>
-        <a href="#">
-            <i class="fas fa-cog settings-icon">
-            </i>
-        </a>
-        <a href="#">
-            <i class="fas fa-sign-out-alt">
-            </i>
-        </a>
-    </div>
+    <!-- footer section starts -->
+  @include('upload_tugas.navbar')
    <div class="main-content">
     <div class="header">
      <div class="logo">
@@ -198,5 +172,8 @@
     </div>
    </div>
   </div>
+
+  <!-- footer section starts -->
+  @include('upload_tugas.footer')
  </body>
 </html>

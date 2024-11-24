@@ -7,7 +7,7 @@
         <a href="#" class="nav-link active">
             <i class="fas fa-home-alt nav-icon"></i> Dashboard
         </a>
-        <a href="#" class="nav-link">
+        <a href="{{ route('chat') }}" class="nav-link">
             <i class="fas fa-envelope nav-icon"></i> Pesan
         </a>
         <a href="{{ route('kursus-saya') }}" class="nav-link">
