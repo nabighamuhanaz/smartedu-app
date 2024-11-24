@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .sidebar {
+    width: 16rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+  
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #d1d5db;
+    border-radius: 9999px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #d1d5db;
+    border-radius: 9999px;
+  }
+  
+  .chat {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    max-width: 20rem;
+    color: white;
+  }
+  
+  .chat-right {
+    align-self: flex-end;
+    background-color: #1e40af;
+  }
+  
+  .chat-left {
+    align-self: flex-start;
+    background-color: #e9d203;
+  }
+  
+  .audio {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .progress-bar {
+    flex: 1;
+    background-color: #000;
+    height: 0.25rem;
+    border-radius: 0.25rem;
+  }
+  
+  .input-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  .input-field {
+    flex: 1;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .send-button {
+    background-color: #1e40af;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1.5rem;
+  }
+  
