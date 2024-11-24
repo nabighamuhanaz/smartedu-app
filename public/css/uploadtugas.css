@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #F5F7FA;
     margin: 0;
     padding: 0;
@@ -8,18 +8,16 @@ body {
     display: flex;
 }
 .sidebar {
-    width: 80px;
+    position: relative;
     background-color: #FFFFFF;
-    padding: 20px 0;
-    display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    height: 100vh;
 }
 .sidebar i {
     font-size: 24px;
-    margin: 20px 0;
-    color: #B0B0B0;
+    color: #000000;
 }
 .sidebar i:hover {
     color: #000000;
@@ -37,7 +35,10 @@ body {
 .header .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #FFD700;
+    background: linear-gradient(90deg, #FFD700, #0a3073);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 .header .search-bar {
     position: relative;
@@ -45,8 +46,8 @@ body {
 .header .search-bar input {
     padding: 10px;
     border-radius: 20px;
-    border: 1px solid #E0E0E0;
     width: 200px;
+    border: #989797;
 }
 .header .search-bar i {
     position: absolute;
@@ -90,20 +91,22 @@ body {
 }
 .content .table-container table th, .content .table-container table td {
     padding: 15px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #E0E0E0;
 }
 .content .table-container table th {
-    background-color: #F5F7FA;
+    background-color: #FFFFFF;
     font-weight: bold;
+    text-align: center;
 }
 .content .table-container table td .submit-btn {
     background-color: #FFD700;
     border: none;
     padding: 10px 20px;
-    border-radius: 20px;
-    color: #FFFFFF;
+    border-radius: 10px;
+    color: #000000;
     cursor: pointer;
+    font-weight: bold;
 }
 .content .table-container table td .submit-btn:hover {
     background-color: #FFC107;
@@ -120,7 +123,7 @@ body {
 .content .progress-container .progress-title {
     font-size: 16px;
     font-weight: bold;
-    color: #000000;
+    color: #0a3073;
     margin-bottom: 20px;
 }
 .content .progress-container .progress-circle {
