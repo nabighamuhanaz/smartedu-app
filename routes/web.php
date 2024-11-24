@@ -17,3 +17,8 @@ Route::get('/video', function () {
 Route::get('/upload-tugas', function () {
     return view('upload_tugas.upload_tugas');
 })->name('upload-tugas');
+
+Route::get('/sertifikat', function () {
+    return view('sertifikat.sertif'); 
+})->name('sertifikat');
+

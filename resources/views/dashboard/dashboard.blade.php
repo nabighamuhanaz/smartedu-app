@@ -103,7 +103,7 @@
                                 <!-- Teks progress  -->
                                 <div class="progress-text" style="color: #FFFFFF;">100%</div>
                             </div>
-                            <a class="continue-link bg-blue-600" href="#">Sertifikat</a>
+                            <a class="continue-link bg-blue-600" href="{{ route('sertifikat') }}">Sertifikat</a>
                         </div>
                     </div>
 
