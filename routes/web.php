@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('dashboard.dashboard');
 })->name('dashboard');
 
+Route::get('/chat', function () {
+    return view('chat.chat');
+})->name('chat');
+
 Route::get('/detail-course', function () {
     return view('detail_course.detailcourse');
 })->name('kursus-saya');
@@ -19,6 +23,6 @@ Route::get('/upload-tugas', function () {
 })->name('upload-tugas');
 
 Route::get('/sertifikat', function () {
-    return view('sertifikat.sertif'); 
+    return view('sertifikat.sertif');
 })->name('sertifikat');
 
