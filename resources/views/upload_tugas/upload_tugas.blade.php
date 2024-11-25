@@ -17,7 +17,7 @@
    <div class="main-content">
     <div class="header">
      <div class="logo">
-      SMARTEDU
+      + SMARTEDU
      </div>
      <div class="search-bar">
       <input placeholder="Cari.." type="text"/>
@@ -170,10 +170,9 @@
       </div>
      </div>
     </div>
+    <!-- footer section starts -->
+  @include('upload_tugas.footer')
    </div>
   </div>
-
-  <!-- footer section starts -->
-  @include('upload_tugas.footer')
  </body>
 </html>
