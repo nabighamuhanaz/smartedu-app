@@ -81,7 +81,7 @@
   </div> --}}
 
   <!-- footer section starts -->
-  @include('sertif.footer')
+  @include('sertifikat.footer')
   <!-- footer section ends -->
  </body>
 </html>
