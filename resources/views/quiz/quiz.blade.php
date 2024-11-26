@@ -16,14 +16,11 @@
         <div class="right-menu">
             <div class="search-bar">
                 <input placeholder="Cari.." type="text"/>
-                <i class="fa fas-search">
-                </i>
+                <i class="fa fas-search"></i>
             </div>
             <div class="user">
-            <img src="https://storage.googleapis.com/a1aa/image/AbjGzYRcDex2KqcQJT3Pq51pDrfU1v2vxYAWEQWtaQ5ZSkzTA.jpg" width="40"/>
-            <span>
-                Halo, Nabigha
-            </span>
+                <img src="https://storage.googleapis.com/a1aa/image/AbjGzYRcDex2KqcQJT3Pq51pDrfU1v2vxYAWEQWtaQ5ZSkzTA.jpg" width="40"/>
+                <span>Halo, Nabigha</span>
             </div>
         </div>
     </div>
@@ -38,7 +35,7 @@
             </div>
             <div class="quiz">
                 <div class="question">
-                    <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p>1. Surabaya ada berapa kabupaten?</p>
                     <ul class="options">
                         <li>A. Jawaban 1</li>
                         <li>B. Jawaban 2</li>
@@ -47,30 +44,32 @@
                         <li>E. Jawaban 5</li>
                     </ul>
                 </div>
-            </div>
-            <div class="question">
-                <p>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <ul class="options">
-                    <li>A. Jawaban 1</li>
-                    <li>B. Jawaban 2</li>
-                    <li>C. Jawaban 3</li>
-                    <li>D. Jawaban 4</li>
-                    <li>E. Jawaban 5</li>
-                </ul>
-            </div>
-            <div class="navigation">
-                <button>
-                    <i class="fas fa-arrow-left"></i>
-                    Previous
-                </button>
-                <button>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
+                <div class="question2">
+                    <p>2. Surabaya ada berapa kabupaten?</p>
+                    <ul class="options2">
+                        <li>A. Jawaban 1</li>
+                        <li>B. Jawaban 2</li>
+                        <li>C. Jawaban 3</li>
+                        <li>D. Jawaban 4</li>
+                        <li>E. Jawaban 5</li>
+                    </ul>
+                </div>
+                <!-- Tombol Previous dan Next di dalam kotak kuning -->
+                <div class="navigation">
+                    <button>
+                        <i class="fas fa-arrow-left"></i>
+                        Previous
+                    </button>
+                    <button>
+                        <i class="fas fa-arrow-right"></i>
+                        Next
+                    </button>
+                </div>
             </div>
         </div>
         <div class="sidebar">
             <div class="quiz-nav">
-                <div class="title">Navigasi quiz</div>
+                <div class="title">Navigasi Quiz</div>
                 <div class="grid">
                     <button>1</button>
                     <button>2</button>
