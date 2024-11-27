@@ -11,72 +11,9 @@ body {
     justify-content: center;
     height: 100vh;
 }
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.header .logo {
-    display: flex;
-    align-items: center;
-}
-.header .logo i {
-    font-size: 24px;
-    color: #ffcc00;
-}
-.header .logo span {
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 10px;
-}
-.header .search-bar {
-    flex-grow: 1;
-    margin: 0 20px;
-}
-.header .search-bar input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-}
-.header .user-info {
-    display: flex;
-    align-items: center;
-}
-.header .user-info img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.header .user-info span {
-    font-size: 14px;
-}
-.sidebar {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 60px;
-    height: calc(100% - 60px);
-    background-color: #fff;
-    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-}
-.sidebar a {
-    margin: 10px 0;
-    color: #333;
-    text-decoration: none;
-    font-size: 20px;
-}
+
 .content {
-    margin-left: 80px;
+    margin-left: 50px;
     padding: 20px;
     width: 100%;
     max-width: 800px;
@@ -90,8 +27,9 @@ body {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 90%;
+    width: 100%;
     max-width: 600px;
+    box-sizing: border-box; /* Make sure padding is included in width */
 }
 .form-container h2 {
     background-color: #ffcc00;
@@ -112,6 +50,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #e0e0e0;
+    box-sizing: border-box; /* Ensure input/textarea respects padding */
 }
 .form-container .button-container {
     display: flex;

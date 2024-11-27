@@ -1,63 +1,19 @@
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: #f5f7fa;
     position: relative;
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.header .logo {
-    display: flex;
-    align-items: center;
-}
-.header .logo i {
-    font-size: 24px;
-    color: #ffcc00;
-    margin-right: 10px;
-}
-.header .logo span {
-    font-size: 18px;
-    font-weight: bold;
-    color: #a3a3a3;
-}
-.header .search {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-}
-.header .search input {
-    width: 300px;
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-}
-.header .user {
-    display: flex;
-    align-items: center;
-}
-.header .user img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.header .user span {
-    font-size: 14px;
-    color: #a3a3a3;
-}
-.container {
+
+.certificate-section-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    margin-top: 90px; /* Keeps space below navbar */
 }
-.certificate {
+
+.certificate-section-content {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -66,13 +22,17 @@ body {
     max-width: 800px;
     width: 100%;
 }
-.certificate img {
+
+.certificate-section-content img {
     width: 100%;
     border-radius: 10px;
 }
+
 .download-button {
     margin-top: 20px;
+    text-align: center;
 }
+
 .download-button button {
     background-color: #ffcc00;
     color: #000000;
@@ -82,35 +42,9 @@ body {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    width: 100%;
-    position: relative;
-}
-.footer .left, .footer .right {
-    flex: 1;
-}
-.footer .left {
-    font-size: 14px;
-    color: #a3a3a3;
-}
-.footer .right {
-    display: flex;
-    justify-content: space-around;
-}
-.footer .right div {
-    display: flex;
-    flex-direction: column;
-}
-.footer .right div a {
-    color: #a3a3a3;
-    text-decoration: none;
-    font-size: 14px;
-    margin-bottom: 5px;
+
+.download-button button:hover {
+    background-color: #ffb900; /* Darker shade for hover effect */
 }
