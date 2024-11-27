@@ -89,7 +89,9 @@
                         <img alt="Video Thumbnail" src="https://storage.googleapis.com/a1aa/image/qbMjNOUJ4tpaAJui86SVKZLjPpCO0Iqz9MeSmfN5J15It2vTA.jpg" />
                         <div class="info">
                             <p>Kuis</p>
-                            <h3>Kuis Chapter 1</h3>
+                            <a href="{{ route('quiz') }}">
+                                <h3>Kuis Chapter 1</h3>
+                            </a>
                             <div class="progress-container">
                                 <div class="progress-bar" style="width: 50%;"></div> <!-- Progress Bar -->
                             </div>

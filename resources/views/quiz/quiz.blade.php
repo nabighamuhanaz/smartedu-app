@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMARTEDU</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="quiz.css">
+    <link href="{{ asset('css/quiz.css') }}" rel="stylesheet" />
 </head>
+
 <body>
     <div class="header">
         <div class="logo">
-            <img src="SmartEdu.png" height="40"/>
+            <img src="SmartEdu.png" height="40" />
         </div>
         <div class="right-menu">
             <div class="search-bar">
-                <input placeholder="Cari.." type="text"/>
+                <input placeholder="Cari.." type="text" />
                 <i class="fa fas-search">
                 </i>
             </div>
             <div class="user">
-            <img src="https://storage.googleapis.com/a1aa/image/AbjGzYRcDex2KqcQJT3Pq51pDrfU1v2vxYAWEQWtaQ5ZSkzTA.jpg" width="40"/>
-            <span>
-                Halo, Nabigha
-            </span>
+                <img src="https://storage.googleapis.com/a1aa/image/AbjGzYRcDex2KqcQJT3Pq51pDrfU1v2vxYAWEQWtaQ5ZSkzTA.jpg" width="40" />
+                <span>
+                    Halo, Nabigha
+                </span>
             </div>
         </div>
     </div>
@@ -114,4 +116,5 @@
         </div>
     </div>
 </body>
+
 </html>

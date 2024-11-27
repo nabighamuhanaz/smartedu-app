@@ -26,3 +26,10 @@ Route::get('/sertifikat', function () {
     return view('sertifikat.sertif');
 })->name('sertifikat');
 
+Route::get('/quiz', function () {
+    return view('quiz.quiz');
+})->name('quiz');
+
+Route::get('/upload-finpro', function () {
+    return view('upload_finpro.upload_finpro');
+})->name('upload_finpro');

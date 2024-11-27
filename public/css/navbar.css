@@ -14,13 +14,16 @@
 
 .logo-icon {
     font-size: 36px;
-    color: #f59e0b;
+    color: #ffde00;
 }
 
 .logo-text {
     font-size: 24px;
     font-weight: bold;
     margin-left: 10px;
+    background: linear-gradient(to right, #ffde00, #1873d3);
+    -webkit-background-clip: text; /* Memastikan gradient diterapkan pada teks */
+    color: transparent; /* Menghilangkan warna dasar teks */
 }
 
 .nav {
