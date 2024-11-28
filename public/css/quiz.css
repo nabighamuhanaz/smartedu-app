@@ -197,10 +197,3 @@ body {
     background-color: #1237A1;
     color: #fff;
 }
-
-.footer {
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}

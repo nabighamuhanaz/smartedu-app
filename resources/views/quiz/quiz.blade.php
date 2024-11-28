@@ -100,17 +100,7 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="left">
-            <p>SMARTEDU</p>
-            <p>Platform terdepan untuk membantu siswa mengembangkan keterampilan mereka di bawah instruktur terbaik dan membangun karier dari mana saja di seluruh dunia</p>
-        </div>
-        <div class="right">
-            <a href="#">Nilai saya</a>
-            <a href="#">Kursus saya</a>
-            <a href="#">Kalender</a>
-            <a href="#">Pesan</a>
-        </div>
-    </div>
+    <!-- footer section starts -->
+    @include('quiz.footer')
 </body>
 </html>
