@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -19,14 +19,14 @@ body {
 }
 
 .header .right-menu {
-    display: flex; /* Flexbox untuk menyusun elemen secara horizontal */
-    align-items: center; /* Vertikal sejajar */
-    gap: 20px; /* Memberi jarak antar elemen */
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .header .search-bar {
     display: flex;
-    align-items: center; /* Vertikal sejajar antara ikon dan input */
+    align-items: center;
 }
 
 .header .search-bar input {
@@ -37,14 +37,14 @@ body {
 }
 
 .header .search-bar i {
-    margin-left: 8px; /* Jarak antara input dan ikon pencarian */
+    margin-left: 8px;
     color: #333;
 }
 
 .header .user {
     display: flex;
-    align-items: center; /* Vertikal sejajar */
-    gap: 10px; /* Jarak antara foto dan teks */
+    align-items: center;
+    gap: 10px;
 }
 
 .header .user img {
@@ -53,19 +53,28 @@ body {
     border-radius: 50%;
 }
 
-.header .user span {
-    font-size: 14px;
-    color: #333;
-}
-
 .main {
-    display: flex;
+    display: flex; /* Mengatur layout menjadi horizontal */
+    justify-content: center; /* Memusatkan elemen secara horizontal */
+    align-items: flex-start; /* Pastikan elemen disejajarkan ke atas */
+    gap: 20px; /* Jarak antar elemen */
     padding: 20px;
 }
+
 .main .content {
-    flex-grow: 1;
-    margin-right: 20px;
+    width: 70%; /* Menentukan lebar untuk elemen konten */
+    max-width: 800px; /* Membatasi ukuran maksimum */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.main .content .quiz-header,
+.main .content .quiz {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .main .content .quiz-header {
     display: flex;
     justify-content: space-between;
@@ -75,16 +84,20 @@ body {
     padding: 10px 20px;
     border-radius: 8px;
 }
+
 .main .content .quiz-header .title {
     font-size: 18px;
 }
+
 .main .content .quiz-header .timer {
     display: flex;
     align-items: center;
 }
+
 .main .content .quiz-header .timer span {
     margin-right: 10px;
 }
+
 .main .content .quiz-header .timer .time-box {
     font-size: 18px;
     background-color: #fff;
@@ -92,34 +105,34 @@ body {
     padding: 5px 10px;
     border-radius: 4px;
 }
+
 .main .content .quiz {
     background-color: #FFB900;
     padding: 20px;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 40px; /* Jarak yang lebih besar antara quiz dan quiz-nav */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
 }
-.main .content .quiz .question {
+
+.main .content .quiz .question,
+.main .content .quiz .question2 {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
-.main .content .quiz .question p {
-    margin: 0 0 10px;
-}
-.main .content .quiz .question .options {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.main .content .quiz .question .options li {
-    margin-bottom: 10px;
-}
+
 .main .content .quiz .navigation {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    gap: 20px;
+    margin-top: 20px; /* Memberikan jarak antara tombol navigasi dengan pertanyaan */
 }
+
 .main .content .quiz .navigation button {
     background-color: #fff;
     border: none;
@@ -127,57 +140,60 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 20%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
+
+.main .content .quiz .navigation button:last-child {
+    display: flex;
+    justify-content: flex-end;  /* Memindahkan isi tombol ke kanan */
+    width: 20%;  /* Menjaga ukuran tombol tetap proporsional */
+}
+
+
+.main .content .quiz .navigation button:hover {
+    background-color: #1237A1;
+    color: #fff;
+}
+
 .main .content .quiz .navigation button i {
     margin-right: 5px;
 }
 
-.main .sidebar {
-    width: 200px;
-}
-.main .sidebar .quiz-nav {
+.sidebar .quiz-nav {
     background-color: #ffcc00;
     padding: 20px;
     border-radius: 8px;
+    margin-top: 0; /* Hilangkan margin atas agar sejajar */
+    height: auto; /* Biarkan ukuran tinggi menyesuaikan */
 }
-.main .sidebar .quiz-nav .title {
-    font-size: 16px;
-    margin-bottom: 10px;
+
+.sidebar {
+    width: 30%; /* Sidebar diatur lebih kecil dari konten */
+    max-width: 300px; /* Membatasi ukuran maksimum */
 }
-.main .sidebar .quiz-nav .grid {
+
+.sidebar .quiz-nav .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
+    gap: 10px;
 }
-.main .sidebar .quiz-nav .grid button {
+
+.sidebar .quiz-nav .grid button {
     background-color: #fff;
-    border: none;
+    color: #000;
+    border: 1px solid #ddd;
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;
+    transition: background-color 0.3s ease;
 }
-.footer {
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-.footer .left {
-    max-width: 50%;
-}
-.footer .left p {
-    margin: 0;
-    font-size: 14px;
-}
-.footer .right {
-    display: flex;
-    flex-direction: column;
-}
-.footer .right a {
-    color: #000;
-    text-decoration: none;
-    margin-bottom: 5px;
-    font-size: 14px;
+
+.sidebar .quiz-nav .grid button:hover {
+    background-color: #1237A1;
+    color: #fff;
 }

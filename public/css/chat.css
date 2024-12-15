@@ -20,26 +20,26 @@ body {
     font-size: 1.5rem;
     color: #000000;
     transition: color 0.2s ease;
-  }
+}
 
-  .sidebar i:hover {
-    color: #FFB900;
-  }
+.sidebar i:hover {
+  color: #FFB900;
+}
 
-  .flex-1 {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    margin-left: 80px;
-    height: 100%;
-  }
+.flex-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-left: 80px;
+  height: 100%;
+}
 
-  .icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #d1d5db;
-    border-radius: 9999px;
-  }
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #d1d5db;
+  border-radius: 9999px;
+}
 
   .header {
     display: flex;
