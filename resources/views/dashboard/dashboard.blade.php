@@ -11,8 +11,10 @@
     <!-- custom css link -->
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/navbar.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/navbars.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/profile.css') }}" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 </head>
 
@@ -136,6 +138,15 @@
     <!-- footer section starts -->
     @include('dashboard.footer')
     <!-- footer section ends -->
+
+    <script>
+        $(document).ready(function() {
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        });
+    </script>
 
 </body>
 
