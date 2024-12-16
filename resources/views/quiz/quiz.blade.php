@@ -13,19 +13,16 @@
 <body>
     {{-- <div class="header">
         <div class="logo">
-            <img src="SmartEdu.png" height="40" />
+            <img src="SmartEdu.png" height="40"/>
         </div>
         <div class="right-menu">
             <div class="search-bar">
-                <input placeholder="Cari.." type="text" />
-                <i class="fa fas-search">
-                </i>
+                <input placeholder="Cari.." type="text"/>
+                <i class="fa fas-search"></i>
             </div>
             <div class="user">
-                <img src="https://storage.googleapis.com/a1aa/image/AbjGzYRcDex2KqcQJT3Pq51pDrfU1v2vxYAWEQWtaQ5ZSkzTA.jpg" width="40" />
-                <span>
-                    Halo, Nabigha
-                </span>
+                <img src="https://storage.googleapis.com/a1aa/image/AbjGzYRcDex2KqcQJT3Pq51pDrfU1v2vxYAWEQWtaQ5ZSkzTA.jpg" width="40"/>
+                <span>Halo, Nabigha</span>
             </div>
         </div>
     </div> --}}
@@ -41,26 +38,44 @@
             </div>
             <div class="quiz">
                 <div class="question">
-                    <p>1. Surabaya ada berapa kabupaten?</p>
-                    <ul class="options">
-                        <li>A. Jawaban 1</li>
-                        <li>B. Jawaban 2</li>
-                        <li>C. Jawaban 3</li>
-                        <li>D. Jawaban 4</li>
-                        <li>E. Jawaban 5</li>
-                    </ul>
+                    <div class="question-text">
+                        <p>1. Surabaya ada berapa kabupaten?</p>
+                    </div>
+                    <div class="question-options">
+                        <ul class="options">
+                            <li>
+                                <label>
+                                    <input type="radio" name="question1" value="A">
+                                    A. Jawaban 1
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="question1" value="B">
+                                    B. Jawaban 2
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="question1" value="C">
+                                    C. Jawaban 3
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="question1" value="D">
+                                    D. Jawaban 4
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="question1" value="E">
+                                    E. Jawaban 5
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="question2">
-                    <p>2. Surabaya ada berapa kabupaten?</p>
-                    <ul class="options2">
-                        <li>A. Jawaban 1</li>
-                        <li>B. Jawaban 2</li>
-                        <li>C. Jawaban 3</li>
-                        <li>D. Jawaban 4</li>
-                        <li>E. Jawaban 5</li>
-                    </ul>
-                </div>
-                <!-- Tombol Previous dan Next di dalam kotak kuning -->
                 <div class="navigation">
                     <button>
                         <i class="fas fa-arrow-left"></i>
