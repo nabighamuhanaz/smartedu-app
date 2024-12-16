@@ -29,18 +29,21 @@
     -webkit-text-fill-color: transparent; /* For text color compatibility */
 }
 .header .search-bar {
-    flex-grow: 1;
+    flex: 1;
+    display: flex;
     margin: 0 20px;
     position: relative;
     left: 20px;
+    right: 20px;
 }
 .header .search-bar input {
-    width: 90%; /* Reduce width */
+    width: 80%; /* Reduce width */
     padding: 10px 10px 10px 50px; /* Add padding for icon */
     border-radius: 20px;
     border: 1px solid #ccc;
     background-color: #f0f0f0; /* Lighter grey background */
     color: #333; /* Dark text */
+    justify-content: center;
 }
 .header .search-bar .fa-search {
     position: absolute;
