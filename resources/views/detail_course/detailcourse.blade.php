@@ -10,24 +10,33 @@
 
     <!-- custom css link -->
     <link href="{{ asset('css/detailcourse.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/navbar2.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/searchbar.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/navbars.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
-    <!-- navbar section starts -->
-    @include('detail_course.navbar')
-    <!-- navbar section ends -->
-
-    <!-- searchbar section starts -->
-    @include('detail_course.searchbar')
-    <!-- searchbar section ends -->
-
+<body class="bg-gray-50">
     <div class="container">
-        <div class="content">
-            <h1>UI/UX Pemula</h1>
-            <p>Kursus Saya / UI/UX Pemula</p>
+        <!-- navbar section starts -->
+        @include('dashboard.navbar')
+        <!-- navbar section ends -->
+
+        <!-- main section ends -->
+        <div class="main-content">
+            <div class="header">
+                <input type="text" class="search-input" placeholder="Search your course here..." />
+                <div class="profile">
+                    <div class="profile-info">
+                        <h2 class="profile-name">Nabigha Muhana Zayyan</h2>
+                        <p class="profile-username">@NabighaMZ</p>
+                    </div>
+                    <img src="https://storage.googleapis.com/a1aa/image/ljzrMZaZmnInM1hfnuWSaUfLdZeeykKcTaefmfEexfgz2cLbnA.jpg" alt="Profile picture" class="profile-picture" />
+                </div>
+            </div>
+            <div class="content">
+                <h1>UI/UX Pemula</h1>
+                <p>Kursus Saya / UI/UX Pemula</p>
+            </div>
 
             <div class="chapter">
                 <h2>
@@ -140,6 +149,8 @@
             </div>
         </div>
     </div>
+    </div>
+    <!-- main section ends -->
 
     <!-- footer section starts -->
     @include('dashboard.footer')
@@ -159,6 +170,12 @@
                 this.classList.toggle("fa-chevron-down");
                 this.classList.toggle("fa-chevron-down");
             });
+        });
+    });
+    $(document).ready(function() {
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
         });
     });
 </script>

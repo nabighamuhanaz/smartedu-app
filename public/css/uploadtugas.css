@@ -1,48 +1,107 @@
+/* Global Styles */
+html,
 body {
     font-family: "Inter", sans-serif;
-    background-color: #f5f7fa;
+    height: 100%;
     margin: 0;
-    padding: 0;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Konten utama */
+/* Main Content */
+.container {
+    display: flex; /* Menggunakan flexbox untuk mengatur layout */
+    flex-direction: row; /* Mengatur arah flex menjadi baris */
+    height: 100vh; /* Mengatur tinggi container menjadi 100vh */
+}
+
+.sidebar {
+    width: 15%; /* Lebar sidebar */
+    background-color: white;
+    height: 100%; /* Mengatur tinggi sidebar menjadi 100% dari container */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    width: 85%; /* Lebar konten utama */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Menyusun konten secara vertikal */
+    justify-content: flex-start;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.search-input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.profile-info {
+    text-align: right;
+    margin-right: 15px;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-username {
+    color: #6b7280;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .content {
     display: flex;
-    justify-content: space-between; /* Menjaga jarak antara tabel dan progress container */
-    align-items: flex-start; /* Menjaga posisi elemen tetap rapi */
-    padding: 20px;
-    margin-top: 90px; /* Memberikan ruang bawah navbar */
+    align-items: center;
+    margin-top: 10px; /* Keeps space below navbar */
 }
-
-/* Tabel Kontainer */
 .content .table-container {
     flex-grow: 1;
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 50px;
 }
-
-/* Tabel */
 .content .table-container table {
     width: 100%;
     border-collapse: collapse;
 }
-
 .content .table-container table th,
 .content .table-container table td {
     padding: 15px;
     text-align: center;
     border-bottom: 1px solid #e0e0e0;
 }
-
 .content .table-container table th {
     background-color: #ffffff;
     font-weight: bold;
     text-align: center;
 }
-
 .content .table-container table td .submit-btn {
     background-color: #ffd700;
     border: none;
@@ -52,12 +111,9 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
-
 .content .table-container table td .submit-btn:hover {
     background-color: #ffc107;
 }
-
-/* Progress Container */
 .content .progress-container {
     width: 200px;
     margin-left: 20px;
@@ -67,24 +123,18 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
-/* Judul Progress */
 .content .progress-container .progress-title {
     font-size: 16px;
     font-weight: bold;
     color: #0a3073;
     margin-bottom: 20px;
 }
-
-/* Lingkaran Progress */
 .content .progress-container .progress-circle {
     position: relative;
     width: 100px;
     height: 100px;
     margin: 0 auto;
 }
-
-/* Lingkaran progress yang menunjukkan status */
 .content .progress-container .progress-circle .circle {
     stroke-dasharray: 251.2;
     stroke-dashoffset: 50.24;
@@ -99,7 +149,6 @@ body {
     fill: none;
 }
 
-/* Persentase pada tengah lingkaran */
 .content .progress-container .progress-circle .percentage {
     position: absolute;
     top: 50%;
