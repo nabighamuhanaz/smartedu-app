@@ -5,34 +5,44 @@ body {
     padding: 0;
 }
 
+/* Konten utama */
 .content {
     display: flex;
-    align-items: center;
+    justify-content: space-between; /* Menjaga jarak antara tabel dan progress container */
+    align-items: flex-start; /* Menjaga posisi elemen tetap rapi */
     padding: 20px;
-    margin-top: 90px; /* Keeps space below navbar */
+    margin-top: 90px; /* Memberikan ruang bawah navbar */
 }
+
+/* Tabel Kontainer */
 .content .table-container {
     flex-grow: 1;
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
 }
+
+/* Tabel */
 .content .table-container table {
     width: 100%;
     border-collapse: collapse;
 }
+
 .content .table-container table th,
 .content .table-container table td {
     padding: 15px;
     text-align: center;
     border-bottom: 1px solid #e0e0e0;
 }
+
 .content .table-container table th {
     background-color: #ffffff;
     font-weight: bold;
     text-align: center;
 }
+
 .content .table-container table td .submit-btn {
     background-color: #ffd700;
     border: none;
@@ -42,9 +52,12 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
+
 .content .table-container table td .submit-btn:hover {
     background-color: #ffc107;
 }
+
+/* Progress Container */
 .content .progress-container {
     width: 200px;
     margin-left: 20px;
@@ -54,18 +67,24 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
+/* Judul Progress */
 .content .progress-container .progress-title {
     font-size: 16px;
     font-weight: bold;
     color: #0a3073;
     margin-bottom: 20px;
 }
+
+/* Lingkaran Progress */
 .content .progress-container .progress-circle {
     position: relative;
     width: 100px;
     height: 100px;
     margin: 0 auto;
 }
+
+/* Lingkaran progress yang menunjukkan status */
 .content .progress-container .progress-circle .circle {
     stroke-dasharray: 251.2;
     stroke-dashoffset: 50.24;
@@ -80,6 +99,7 @@ body {
     fill: none;
 }
 
+/* Persentase pada tengah lingkaran */
 .content .progress-container .progress-circle .percentage {
     position: absolute;
     top: 50%;
