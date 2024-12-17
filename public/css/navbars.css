@@ -24,13 +24,14 @@ body {
 }
 
 .sidebar-brand span {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     margin-left: 5px;
     background: linear-gradient(to right, #ffde00, #1873d3);
     -webkit-background-clip: text; /* For Chrome and Safari */
     background-clip: text; /* Standard property for other browsers */
     -webkit-text-fill-color: transparent; /* For text color compatibility */
+    padding-top: 30px; /* Menambahkan padding di atas teks */
 }
 
 /* Toggle Styles */
