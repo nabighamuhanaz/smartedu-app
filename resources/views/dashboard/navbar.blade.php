@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMARTEDU</title>
     <style>
         .sidebar-nav a.active i {
-            color: orange; /* Warna biru untuk ikon aktif */
+            color: orange;
+            /* Warna biru untuk ikon aktif */
         }
 
         .sidebar-nav a.active span {
-            color: orange; /* Warna biru untuk teks aktif */
+            color: orange;
+            /* Warna biru untuk teks aktif */
         }
 
         .sidebar-nav a {
@@ -30,13 +33,9 @@
         }
     </style>
 </head>
+
 <body>
     <div id="wrapper">
-        <!-- Sidebar -->
-        <!-- Menu Toggle (Hamburger Icon) -->
-        <div id="menu-toggle">
-            <i class="fas fa-bars"></i> <!-- Icon hamburger -->
-        </div>
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <div class="sidebar-nav">
@@ -68,19 +67,25 @@
                     <i class="fas fa-sign-out-alt"></i>
                     <span>Keluar</span>
                 </a>
-                
+
             </div>
         </div>
+    </div>
+    <div id="page-content-wrapper">
+        <span href="#menu-toggle" id="menu-toggle">
+            &#9776;
+        </span>
     </div>
     <script>
         // JavaScript untuk toggle sidebar
         const menuToggle = document.getElementById('menu-toggle');
         const sidebarWrapper = document.getElementById('sidebar-wrapper');
-        
+
         menuToggle.addEventListener('click', function() {
             sidebarWrapper.classList.toggle('toggled');
             menuToggle.classList.toggle('toggled');
         });
     </script>
 </body>
+
 </html>
