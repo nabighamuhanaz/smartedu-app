@@ -21,7 +21,7 @@
     @include('dashboard.navbar')
     <!-- navbar section ends -->
 
-    <!-- main section ends -->
+    <!-- main content starts -->
     <div class="main-content">
       <div class="header">
         <input type="text" class="search-input" placeholder="Search your course here..." />
@@ -30,9 +30,10 @@
             <h2 class="profile-name">Nabigha Muhana Zayyan</h2>
             <p class="profile-username">@NabighaMZ</p>
           </div>
-          <img src="https://storage.googleapis.com/a1aa/image/ljzrMZaZmnInM1hfnuWSaUfLdZeeykKcTaefmfEexfgz2cLbnA.jpg" alt="Profile picture" class="profile-picture" />
+          <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="Profile picture" class="profile-picture" />
         </div>
       </div>
+
       <div class="content">
         <div class="table-container">
           <table>
@@ -49,9 +50,8 @@
               <tr>
                 <td>Tugas 1</td>
                 <td>
-                  <form action="{{ route('upload_finpro') }}" method="GET">
-                    <button type="submit" class="submit-btn">Submit</button>
-                  </form>
+                  <!-- Tombol untuk membuka modal -->
+                  <button id="openModal" class="submit-btn">Submit</button>
                 </td>
                 <td>1 Januari 2024, 23:59</td>
                 <td>100</td>
@@ -60,43 +60,47 @@
               <tr>
                 <td>Tugas 2</td>
                 <td>
-                  <form action="{{ route('upload_finpro') }}" method="GET">
-                    <button type="submit" class="submit-btn">Submit</button>
-                  </form>
+                  <!-- Tombol untuk membuka modal -->
+                  <button id="openModal" class="submit-btn">Submit</button>
                 </td>
                 <td>1 Januari 2024, 23:59</td>
-                <td>100</td>
-                <td>Excellent!</td>
+                <td>80</td>
+                <td>Very Good!</td>
               </tr>
               <tr>
                 <td>Tugas 3</td>
                 <td>
-                  <form action="{{ route('upload_finpro') }}" method="GET">
-                    <button type="submit" class="submit-btn">Submit</button>
-                  </form>
+                  <!-- Tombol untuk membuka modal -->
+                  <button id="openModal" class="submit-btn">Submit</button>
                 </td>
                 <td>1 Januari 2024, 23:59</td>
-                <td>100</td>
-                <td>Excellent!</td>
+                <td>70</td>
+                <td>Good!</td>
               </tr>
               <tr>
                 <td>Tugas 4</td>
-                <td><button class="submit-btn">Submit</button></td>
+                <td>
+                  <!-- Tombol untuk membuka modal -->
+                  <button id="openModal" class="submit-btn">Submit</button>
+                </td>
                 <td>1 Januari 2024, 23:59</td>
-                <td>100</td>
-                <td>Excellent!</td>
+                <td>60</td>
+                <td>Fair</td>
               </tr>
               <tr>
                 <td>Tugas 5</td>
-                <td><button class="submit-btn">Submit</button></td>
+                <td>
+                  <!-- Tombol untuk membuka modal -->
+                  <button id="openModal" class="submit-btn">Submit</button>
+                </td>
                 <td>1 Januari 2024, 23:59</td>
-                <td>100</td>
-                <td>Excellent!</td>
+                <td>30</td>
+                <td>Poor</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <!-- Assignment Table Section Ends -->
+
         <!-- Progress Section -->
         <div class="progress-container">
           <div class="progress-title">Tugas Harian</div>
@@ -108,9 +112,36 @@
             <div class="percentage">80%</div>
           </div>
         </div>
-        <!-- Progress Section Ends -->
       </div>
-      <!-- Content Section Ends -->
+    </div>
+  </div>
+
+  <!-- Modal di luar tabel -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-header">Upload Tugas</h2>
+      <form action="{{ route('upload_finpro') }}" method="POST" enctype="multipart/form-data">
+        @csrf
+        <div class="form-group">
+          <label for="attachment">Attachment</label>
+          <input id="attachment" name="attachment" type="file" />
+        </div>
+
+        <div class="form-group">
+          <label for="nama-tugas">Nama Tugas</label>
+          <input id="nama-tugas" name="nama-tugas" placeholder="Upload file" type="text" />
+        </div>
+
+        <div class="form-group">
+          <label for="deskripsi-tugas">Deskripsi Tugas</label>
+          <textarea id="deskripsi-tugas" name="deskripsi-tugas" placeholder="Deskripsi Tugas"></textarea>
+        </div>
+
+        <div class="button-container">
+          <button type="submit" class="modal-button">Submit</button>
+        </div>
+      </form>
     </div>
   </div>
 
@@ -125,6 +156,27 @@
         $("#wrapper").toggleClass("toggled");
       });
     });
+    // Ambil elemen modal dan tombol
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("openModal");
+    var span = document.getElementsByClassName("close")[0];
+
+    // Ketika tombol diklik, tampilkan modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // Ketika pengguna klik tombol 'X', sembunyikan modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // Ketika pengguna klik di luar modal, sembunyikan modal
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
   </script>
 </body>
 
