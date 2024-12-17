@@ -33,7 +33,7 @@
                         <h2 class="profile-name">Nabigha Muhana Zayyan</h2>
                         <p class="profile-username">@NabighaMZ</p>
                     </div>
-                    <img src="https://storage.googleapis.com/a1aa/image/ljzrMZaZmnInM1hfnuWSaUfLdZeeykKcTaefmfEexfgz2cLbnA.jpg" alt="Profile picture" class="profile-picture" />
+                    <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="Profile picture" class="profile-picture" />
                 </div>
             </div>
             <div class="grid">

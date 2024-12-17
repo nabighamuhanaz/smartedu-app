@@ -30,7 +30,7 @@
                         <h2 class="profile-name">Nabigha Muhana Zayyan</h2>
                         <p class="profile-username">@NabighaMZ</p>
                     </div>
-                    <img src="https://storage.googleapis.com/a1aa/image/ljzrMZaZmnInM1hfnuWSaUfLdZeeykKcTaefmfEexfgz2cLbnA.jpg" alt="Profile picture" class="profile-picture" />
+                    <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="Profile picture" class="profile-picture" />
                 </div>
             </div>
             <div class="content">
@@ -54,7 +54,7 @@
                                 <div class="progress-bar" style="width: 100%;"></div> <!-- Progress Bar -->
                             </div>
                             <div class="author">
-                                <img alt="Author Picture" src="https://storage.googleapis.com/a1aa/image/inJj4iREDf0vCKs59WiCBn99yU1rfHHhLB04s6cvwAtGt2vTA.jpg" />
+                                <img alt="Author Picture" src="https://bootdey.com/img/Content/avatar/avatar5.png" />
                                 <span>William Saputra</span>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                                 <div class="progress-bar" style="width: 50%;"></div> <!-- Progress Bar -->
                             </div>
                             <div class="author">
-                                <img alt="Author Picture" src="https://storage.googleapis.com/a1aa/image/inJj4iREDf0vCKs59WiCBn99yU1rfHHhLB04s6cvwAtGt2vTA.jpg" />
+                                <img alt="Author Picture" src="https://bootdey.com/img/Content/avatar/avatar5.png" />
                                 <span>William Saputra</span>
                             </div>
                         </div>
@@ -123,7 +123,7 @@
                                 <div class="progress-bar" style="width: 0%;"></div> <!-- Progress Bar -->
                             </div>
                             <div class="author">
-                                <img alt="Author Picture" src="https://storage.googleapis.com/a1aa/image/inJj4iREDf0vCKs59WiCBn99yU1rfHHhLB04s6cvwAtGt2vTA.jpg" />
+                                <img alt="Author Picture" src="https://bootdey.com/img/Content/avatar/avatar5.png" />
                                 <span>William Saputra</span>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
 
                 // Toggle the chevron icon direction
                 this.classList.toggle("fa-chevron-down");
-                this.classList.toggle("fa-chevron-down");
+                this.classList.toggle("fa-chevron-right");
             });
         });
     });

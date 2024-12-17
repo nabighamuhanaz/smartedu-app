@@ -1,7 +1,7 @@
 <div class="right-sidebar">
     <div class="profile-card">
         <div class="profile">
-            <img alt="Profile picture of Nabigha Muhana Zayyan" class="profile-pic" src="https://storage.googleapis.com/a1aa/image/ljzrMZaZmnInM1hfnuWSaUfLdZeeykKcTaefmfEexfgz2cLbnA.jpg" />
+            <img alt="Profile picture of Nabigha Muhana Zayyan" class="profile-pic" src="https://bootdey.com/img/Content/avatar/avatar8.png" />
             <div>
                 <h2 class="profile-name">Nabigha Muhana Zayyan</h2>
                 <p class="profile-username">@NabighaMZ</p>
