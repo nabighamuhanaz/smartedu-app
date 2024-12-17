@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    {{-- <div class="header">
+     <div class="header">
         <div class="logo">
             <img src="SmartEdu.png" height="40"/>
         </div>
@@ -25,8 +25,7 @@
                 <span>Halo, Nabigha</span>
             </div>
         </div>
-    </div> --}}
-
+    </div>
     <div class="main">
         <div class="content">
             <div class="quiz-header">
@@ -123,5 +122,7 @@
     </div>
 
 </body>
-
+  <!-- footer section starts -->
+  @include('quiz.footer')
+  <!-- footer section ends -->
 </html>
