@@ -52,46 +52,60 @@
             </div>
 
             <div class="stats">
-                <div class="stat-item">
-                    <i class="fas fa-book"></i>
-                    <div>
-                        <h2 class="stat-title">Kursus yang Terdaftar</h2>
-                        <p class="stat-value">4 Kursus</p>
+                <div class="stat-item-card">
+                    <div class="stat-item">
+                        <i class="fas fa-book"></i>
+                        <div>
+                            <h2 class="stat-title">Kursus yang Terdaftar</h2>
+                            <p class="stat-value">4 Kursus</p>
+                        </div>
                     </div>
                 </div>
-                <div class="stat-item">
-                    <i class="fas fa-tasks"></i>
-                    <div>
-                        <h2 class="stat-title">Tugas yang sedang berjalan</h2>
-                        <p class="stat-value">15 Tugas</p>
+                <div class="stat-item-card">
+                    <div class="stat-item">
+                        <i class="fas fa-tasks"></i>
+                        <div>
+                            <h2 class="stat-title">Tugas sedang berjalan</h2>
+                            <p class="stat-value">15 Tugas</p>
+                        </div>
                     </div>
                 </div>
-                <div class="stat-item">
-                    <i class="fas fa-check"></i>
-                    <div>
-                        <h2 class="stat-title">Tugas yang telah selesai</h2>
-                        <p class="stat-value">55 Tugas</p>
+                <div class="stat-item-card">
+                    <div class="stat-item">
+                        <i class="fas fa-check"></i>
+                        <div>
+                            <h2 class="stat-title">Tugas selesai</h2>
+                            <p class="stat-value">55 Tugas</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="image-slider">
-                <div class="image-item">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 1">
-                </div>
-                <div class="image-item">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 2">
-                </div>
-                <div class="image-item">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 3">
-                </div>
-                <div class="image-item">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 4">
-                </div>
-                <div class="image-item">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 5">
                 </div>
             </div>            
+
+            <div class="slider">
+                <h2 class="activity-title">Program Menarik</h2>
+                <div class="image-slider">
+                    <div class="image-item">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 1">
+                        <div class="image-text">Kelas Figma</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 2">
+                        <div class="image-text">Kelas Canva</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 3">
+                        <div class="image-text">Kelas Python</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 4">
+                        <div class="image-text">Kelas Cyber Security</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 5">
+                        <div class="image-text">Kelas Software Development</div>
+                    </div>
+                </div> 
+            </div>          
 
             <div class="activity-card">
                 <h2 class="activity-title">Aktivitas Belajar</h2>

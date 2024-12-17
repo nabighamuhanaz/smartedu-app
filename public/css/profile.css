@@ -37,7 +37,7 @@
     background-color: white;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .calendar-title {
@@ -51,12 +51,14 @@
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
     color: #4a5568; /* Warna abu-abu gelap */
+    font-weight: 400;
 }
 
 .stats-card {
     background-color: white;
     padding: 1.5rem;
     border-radius: 0.5rem;
+    margin-top: 1rem;
 }
 
 .stats-title {
@@ -83,4 +85,35 @@
     justify-content: space-around;
     color: #4a5568; /* Warna abu-abu gelap */
     font-size: 13px;
+}
+
+.calendar-grid div {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+.today {
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    font-size: 1rem; /* Adjust the font size for better fit */
+    padding: 0.25rem; /* Reduce padding to make the circle smaller */
+    width: 0.7rem; /* Smaller circle width */
+    height: 0.7rem; /* Smaller circle height */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.has-red-dot::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Move the red dot closer */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px; /* Smaller dot */
+    height: 6px; /* Smaller dot */
+    background-color: red;
+    border-radius: 50%;
 }

@@ -64,10 +64,11 @@
                     <i class="fas fa-cog settings-icon"></i>
                     <span>Pengaturan</span>
                 </a>
-                <a href="#" class="{{ request()->routeIs('logout') ? 'active' : '' }}">
+                <a href="#" id="logout" class="{{ request()->routeIs('logout') ? 'active' : '' }}">
                     <i class="fas fa-sign-out-alt"></i>
-                    <span>Keluar Akun</span>
+                    <span>Keluar</span>
                 </a>
+                
             </div>
         </div>
     </div>

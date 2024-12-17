@@ -25,27 +25,29 @@
             <div>J</div>
             <div>S</div>
             @for ($day = 1; $day <= 31; $day++)
-                <div>{{ $day }}
+                <div class="{{ $day == date('d') ? 'today' : '' }} {{ in_array($day, [10, 19, 27]) ? 'has-red-dot' : '' }}">
+                    {{ $day }}
+                </div>
+            @endfor
         </div>
-        @endfor
     </div>
-</div>
 
-<div class="stats-card">
-    <h2 class="stats-title">STATISTIK STUDI</h2>
-    <div class="stats-bar">
-        <div class="bar" style="height: 4rem;"></div>
-        <div class="bar" style="height: 5rem;"></div>
-        <div class="bar" style="height: 6rem;"></div>
-        <div class="bar" style="height: 3rem;"></div>
-        <div class="bar" style="height: 2rem;"></div>
+    <!-- Move the stats-card below the calendar-card -->
+    <div class="stats-card">
+        <h2 class="stats-title">STATISTIK STUDI</h2>
+        <div class="stats-bar">
+            <div class="bar" style="height: 4rem;"></div>
+            <div class="bar" style="height: 5rem;"></div>
+            <div class="bar" style="height: 6rem;"></div>
+            <div class="bar" style="height: 3rem;"></div>
+            <div class="bar" style="height: 2rem;"></div>
+        </div>
+        <div class="days">
+            <div>SENIN</div>
+            <div>SELASA</div>
+            <div>RABU</div>
+            <div>KAMIS</div>
+            <div>JUMAT</div>
+        </div>
     </div>
-    <div class="days">
-        <div>SENIN</div>
-        <div>SELASA</div>
-        <div>RABU</div>
-        <div>KAMIS</div>
-        <div>JUMAT</div>
-    </div>
-</div>
 </div>

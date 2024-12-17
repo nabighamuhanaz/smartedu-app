@@ -104,6 +104,14 @@ body {
     color: #f59e0b;
 }
 
+.sidebar-nav a#logout span {
+    color: red;
+}
+
+.sidebar-nav a#logout i {
+    color: red;
+}
+
 /* Desktop View*/
 @media only screen and (min-width: 768px) {
     #wrapper {

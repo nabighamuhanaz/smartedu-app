@@ -216,3 +216,9 @@ body {
     background-color: #1237A1;
     color: #fff;
 }
+
+.quiz-nav .grid button.active {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
