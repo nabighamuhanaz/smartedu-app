@@ -168,7 +168,7 @@ body {
 }
 
 .chat .chat-history .my-message {
-    background: #efefef;
+    background: #faf86f;
 }
 
 .chat .chat-history .my-message:after {
@@ -180,23 +180,34 @@ body {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-bottom-color: #efefef;
+    border-bottom-color: #faf86f;
     border-width: 10px;
     margin-left: -10px;
 }
 
 .chat .chat-history .other-message {
-    background: #e8f1f3;
+    background: #bfe0e7;
     text-align: right;
 }
 
 .chat .chat-history .other-message:after {
-    border-bottom-color: #e8f1f3;
+    border-bottom-color: #bfe0e7;
     left: 93%;
 }
 
 .chat .chat-message {
     padding: 20px;
+}
+
+/* Mengatur lebar kolom input chat */
+.chat-message .form-control {
+    width: 100%; /* Menjadikan lebar input sesuai dengan lebar kontainer */
+    max-width: 100%; /* Menjamin input tidak lebih besar dari kontainer */
+}
+
+/* Opsional: Agar kolom input mengambil sisa ruang di dalam chat-message */
+.chat-message {
+    flex-grow: 1; /* Memastikan kolom input mengambil lebih banyak ruang */
 }
 
 .online,
@@ -251,6 +262,9 @@ body {
 
 .form-control {
     height: calc(2.25rem + 2px); /* Penyesuaian tinggi input untuk alignment */
+    border: 2px solid black; /* Menambahkan border hitam */
+    border-radius: 20px;
+    outline: none;
 }
 
 @media only screen and (max-width: 767px) {

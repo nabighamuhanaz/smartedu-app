@@ -9,6 +9,20 @@ body {
     flex-direction: column;
 }
 
+.content {
+    background-image: url('https://img.lovepik.com/background/20211022/large/lovepik-blue-minimalist-business-background-image_401952257.jpg');
+    background-size: cover; /* Agar gambar menutupi seluruh elemen */
+    background-position: center; /* Agar gambar diposisikan di tengah */
+    background-repeat: no-repeat; /* Agar gambar tidak terulang */
+    color: white; /* (Opsional) Teks warna putih untuk kontras */
+    padding: 20px; /* (Opsional) Menambahkan padding agar konten terlihat lebih rapi */
+    border-radius: 8px; /* (Opsional) Membuat sudut lebih halus */
+}
+
+.content p {
+    color: white; /* Mengatur teks paragraf menjadi putih */
+}
+
 /* Main Content */
 .container {
     display: flex; /* Menggunakan flexbox untuk mengatur layout */
@@ -122,6 +136,45 @@ body {
 
 .chapter.open h2 i {
     transform: rotate(90deg); /* Rotate chevron when open */
+}
+
+.table-container {
+    flex-grow: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Lebar 80% dari elemen induk */
+    margin: 0 auto;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container table th,
+.table-container table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+.table-container table th {
+    background-color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+.table-container table td .submit-btn {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+.table-container table td .submit-btn:hover {
+    background-color: #ffc107;
 }
 
 .card {

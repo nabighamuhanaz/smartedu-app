@@ -130,6 +130,50 @@
                     </div>
                 </div>
             </div>
+
+            <div class="chapter">
+                <h2>
+                    <i class="fas fa-chevron-right toggle"></i> Weekly Assignments
+                </h2>
+                <div class="card-container">
+                    <div class="table-container">
+                        <table>
+                        <thead>
+                            <tr>
+                            <th>Nama Tugas</th>
+                            <th>Link Tugas</th>
+                            <th>Deadline</th>
+                            <th>Nilai</th>
+                            <th>Catatan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>Tugas 1</td>
+                            <td>
+                                <!-- Tombol untuk membuka modal -->
+                                <button id="openModal" class="submit-btn">Submit</button>
+                            </td>
+                            <td>1 Januari 2024, 23:59</td>
+                            <td>100</td>
+                            <td>Excellent!</td>
+                            </tr>
+                            <tr>
+                            <td>Tugas 2</td>
+                            <td>
+                                <!-- Tombol untuk membuka modal -->
+                                <button id="openModal" class="submit-btn">Submit</button>
+                            </td>
+                            <td>1 Januari 2024, 23:59</td>
+                            <td>80</td>
+                            <td>Very Good!</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div> 
+                </div>       
+            </div>
+
             <div class="chapter">
                 <h2>
                     <i class="fas fa-chevron-right toggle"></i> Penyelesaian Kursus: Final Project

@@ -175,6 +175,24 @@ body {
     border-radius: 0.5rem;
 }
 
+.image-slider {
+    display: flex;               /* Mengatur elemen anak dalam baris */
+    overflow-x: auto;           /* Mengizinkan scroll horizontal */
+    scroll-snap-type: x mandatory; /* Menambahkan efek snap saat scroll */
+}
+
+.image-item {
+    flex: 0 0 auto;             /* Mengatur ukuran elemen anak agar tidak menyusut */
+    width: 300px;               /* Lebar setiap gambar */
+    scroll-snap-align: start;   /* Menyelaraskan gambar saat scroll */
+    margin-right: 10px;         /* Jarak antar gambar */
+}
+
+.image-item img {
+    width: 100%;                /* Mengatur gambar agar memenuhi lebar item */
+    height: auto;               /* Mempertahankan rasio aspek gambar */
+}
+
 .activity-title {
     font-size: 1.5rem;
     font-weight: 600;

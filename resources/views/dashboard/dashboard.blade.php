@@ -75,6 +75,24 @@
                 </div>
             </div>
 
+            <div class="image-slider">
+                <div class="image-item">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 1">
+                </div>
+                <div class="image-item">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 2">
+                </div>
+                <div class="image-item">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 3">
+                </div>
+                <div class="image-item">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 4">
+                </div>
+                <div class="image-item">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/954/231/small_2x/green-background-and-wallpaper-free-download-free-vector.jpg" alt="Gambar 5">
+                </div>
+            </div>            
+
             <div class="activity-card">
                 <h2 class="activity-title">Aktivitas Belajar</h2>
                 <div class="activity-list">

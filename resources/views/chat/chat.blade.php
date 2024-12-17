@@ -96,9 +96,13 @@
                             <div class="input-group mb-0">
                                 <div class="input-group-prepend">
                                     <!-- Ganti fa-send dengan fa-paper-plane untuk ikon kertas pesawat -->
-                                    <span class="input-group-text"><i class="fa fa-paper-plane"></i></span>
+                                    <span class="input-group-text"><i class="fas fa-plus"></i></span>
                                 </div>
                                 <input type="text" class="form-control" placeholder="Enter text here...">
+                                <div class="input-group-prepend">
+                                    <!-- Ganti fa-send dengan fa-paper-plane untuk ikon kertas pesawat -->
+                                    <span class="input-group-text"><i class="fas fa-paper-plane"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
