@@ -3,6 +3,9 @@ body {
     background-color: #f5f7fa;
     margin: 0;
     padding: 0;
+    height: 100%;  
+    overflow-x: hidden;  /* Menghindari scroll horizontal */
+    overflow-y: auto;
 }
 
 .header {
@@ -183,10 +186,11 @@ body {
     padding: 20px;
     background-color: transparent; /* No background color */
     box-shadow: none; /* Remove shadow */
+    flex-direction: column;
 }
 
 .video-section-content {
-    text-align: center; /* Centers the text */
+    text-align: left; /* Centers the text */
     max-width: 1000px; /* Optional: limit content width */
     margin-left: 200px;
 }
@@ -205,6 +209,24 @@ body {
 .video-section-content p {
     font-size: 16px;
     color: #666;
+}
+
+.tutor-info {
+    display: block;
+    align-items: center;
+    margin-top: 20px; /* Spasi dari elemen sebelumnya */
+}
+
+.tutor-info img {
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    width: 40px; /* Ukuran gambar */
+    height: 40px; /* Ukuran gambar */
+    margin-right: 10px; /* Spasi antara gambar dan teks */
+}
+
+.tutor-info span {
+    font-size: 16px; /* Ukuran teks nama */
+    font-weight: bold; /* Membuat teks lebih tebal */
 }
 
 .footer-title {

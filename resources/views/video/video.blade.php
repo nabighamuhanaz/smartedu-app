@@ -77,6 +77,13 @@
             </div>
         </div>
 
+        {{-- <div class="tutor-info">
+            <img alt="Tutor Profile Picture" height="40" src="https://bootdey.com/img/Content/avatar/avatar8.png" width="40" />
+            <span>
+                Maya Pratiwi
+            </span>
+        </div> --}}
+
         <!-- footer section starts -->
         <!-- <div class="footer-container">
         @include('dashboard.footer')

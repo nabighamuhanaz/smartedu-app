@@ -40,7 +40,8 @@
             <thead>
               <tr>
                 <th>Nama Tugas</th>
-                <th>Link Tugas</th>
+                <th>Nama Course</th>
+                <th>Link Pengumpulan</th>
                 <th>Deadline</th>
                 <th>Nilai</th>
                 <th>Catatan</th>
@@ -48,7 +49,8 @@
             </thead>
             <tbody>
               <tr>
-                <td>Tugas 1</td>
+                <td>Pengenalan UI/UX</td>
+                <td>UI/UX Pemula</td>
                 <td>
                   <!-- Tombol untuk membuka modal -->
                   <button id="openModal" class="submit-btn">Submit</button>
@@ -58,42 +60,46 @@
                 <td>Excellent!</td>
               </tr>
               <tr>
-                <td>Tugas 2</td>
+                <td>Pengenalan HTML dan CSS</td>
+                <td>Dasar Pemrograman Web</td>
                 <td>
                   <!-- Tombol untuk membuka modal -->
                   <button id="openModal" class="submit-btn">Submit</button>
                 </td>
-                <td>1 Januari 2024, 23:59</td>
+                <td>2 Januari 2024, 23:59</td>
                 <td>80</td>
                 <td>Very Good!</td>
               </tr>
               <tr>
-                <td>Tugas 3</td>
+                <td>Pengenalan Digital Marketing</td>
+                <td>Digital Marketing 101</td>
                 <td>
                   <!-- Tombol untuk membuka modal -->
                   <button id="openModal" class="submit-btn">Submit</button>
                 </td>
-                <td>1 Januari 2024, 23:59</td>
+                <td>5 Januari 2024, 23:59</td>
                 <td>70</td>
                 <td>Good!</td>
               </tr>
               <tr>
-                <td>Tugas 4</td>
+                <td>Membuat Website Sederhana: HTML & CSS</td>
+                <td>Dasar Pemrograman Web</td>
                 <td>
                   <!-- Tombol untuk membuka modal -->
                   <button id="openModal" class="submit-btn">Submit</button>
                 </td>
-                <td>1 Januari 2024, 23:59</td>
+                <td>7 Januari 2024, 23:59</td>
                 <td>60</td>
                 <td>Fair</td>
               </tr>
               <tr>
-                <td>Tugas 5</td>
+                <td>Penerapan Desain UI untuk Pemula</td>
+                <td>UI/UX Pemula</td>
                 <td>
                   <!-- Tombol untuk membuka modal -->
                   <button id="openModal" class="submit-btn">Submit</button>
                 </td>
-                <td>1 Januari 2024, 23:59</td>
+                <td>9 Januari 2024, 23:59</td>
                 <td>30</td>
                 <td>Poor</td>
               </tr>

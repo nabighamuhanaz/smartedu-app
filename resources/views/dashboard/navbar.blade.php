@@ -76,7 +76,7 @@
             &#9776;
         </span>
     </div>
-    <script>
+    {{-- <script>
         // JavaScript untuk toggle sidebar
         const menuToggle = document.getElementById('menu-toggle');
         const sidebarWrapper = document.getElementById('sidebar-wrapper');
@@ -85,7 +85,7 @@
             sidebarWrapper.classList.toggle('toggled');
             menuToggle.classList.toggle('toggled');
         });
-    </script>
+    </script> --}}
 </body>
 
 </html>
